@@ -7,12 +7,25 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "codegen": "graphql-codegen --config codegen.ts"
   },
   "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "@as-integrations/h3": "^1.1.6",
     "@nuxt/ui": "^2.16.0",
+    "graphql": "^16.8.1",
     "nuxt": "^3.11.2",
+    "nuxt-graphql-server": "^3.0.0",
+    "pg": "^8.12.0",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "5.0.2",
+    "@graphql-codegen/client-preset": "4.2.6",
+    "@graphql-codegen/introspection": "4.0.3",
+    "@types/pg": "^8.11.6",
+    "typescript": "^5.4.5"
   }
 }
